@@ -1,0 +1,202 @@
+<nav class="navbar">
+    <div class="navbar-logo">
+      <a href="#">
+        <img src="/assets/images/logo-no-background.svg" alt="Logo">
+      </a>
+    </div>
+  
+    <!-- Desktop Menu -->
+    <div class="desktop-navbar-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  
+    <div class="desktop-navbar-icons">
+      <a href="#" aria-label="Facebook">
+        <mat-icon>facebook</mat-icon>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <mat-icon>twitter</mat-icon>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <mat-icon>instagram</mat-icon>
+      </a>
+      <a href="#" class="cart-icon" aria-label="Cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </a>
+    </div>
+  
+    <div class="desktop-navbar-auth">
+      <button mat-button>Login</button>
+      <button mat-raised-button color="primary">Sign Up</button>
+    </div>
+  
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggle" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <!-- Mobile Menu -->
+    <div class="mobile-navbar-collapse" [ngClass]="{'open': isMenuOpen}">
+      <div class="mobile-navbar-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+  
+      <div class="mobile-navbar-icons">
+        <a href="#" aria-label="Facebook">
+          <mat-icon>facebook</mat-icon>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <mat-icon>twitter</mat-icon>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <mat-icon>instagram</mat-icon>
+        </a>
+        <a href="#" class="cart-icon" aria-label="Cart">
+          <mat-icon>shopping_cart</mat-icon>
+        </a>
+      </div>
+  
+      <div class="mobile-navbar-auth">
+        <button mat-button>Login</button>
+        <button mat-raised-button color="primary">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner section -->
+  <div class="container">
+    <div class="content">
+        <h1>Exquisitely Handcrafted Wooden Creations</h1>
+        <p>Discover the charm and elegance of our exquisitely handcrafted wooden creations. Each piece is a testament to fine craftsmanship, blending timeless beauty with superior quality. </p>
+    </div>
+    <div class="video-icon">
+        <i class="fas fa-play play-button" (click)="openPopup()"></i>
+    </div>
+</div>
+
+<div class="video-popup" [ngClass]="{'active': showPopup}">
+    <span class="close-popup" (click)="closePopup()">&times;</span>
+    <iframe *ngIf="showPopup" [src]="videoUrl" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<!-- Card Section -->
+
+<div class="card-info image-container">
+  <div class="image-card">
+      <img src="/assets/images/fast-delivery.webp" alt="Image 1">
+      <h2>Fast Delivery</h2>
+      <p>At Craftistic, we understand the importance of both speed and reliability. That’s why we ensure fast delivery of all our products without compromising on quality. 1</p>
+  </div>
+  <div class="image-card">
+      <img src="/assets/images/high-quality.webp" alt="Image 2">
+      <h2>High Quality</h2>
+      <p>Each piece of furniture and woodcraft is meticulously crafted to meet the highest standards, ensuring durability and aesthetic excellence. </p>
+  </div>
+  <div class="image-card">
+      <img src="/assets/images/best-warranty.webp" alt="Image 3">
+      <h2>Best Warranty</h2>
+      <p>Each piece of furniture and woodcraft is meticulously crafted to meet the highest standards, ensuring durability and aesthetic excellence. </p>
+  </div>
+</div>
+
+<!-- Category section -->
+
+<div class="categories-section">
+  <h2>Categories</h2>
+  <p>Check out our latest updates</p>
+  <div class="categories-container">
+      <div class="category-content">
+          <div class="category-text">
+              <div class="number">24</div>
+              <div class="label">Tables</div>
+          </div>
+          <img src="/assets/images/pexels-rachel-claire.jpg" alt="Image 1">
+      </div>
+      <div class="category-content">
+          <div class="category-text">
+              <div class="number">23</div>
+              <div class="label">Lambs</div>
+          </div>
+          <img src="/assets/images/pexels-whynugrohou.jpg" alt="Image 2">
+      </div>
+      <div class="category-content">
+          <div class="category-text">
+              <div class="number">4</div>
+              <div class="label">Kitchen</div>
+          </div>
+          <img src="/assets/images/pexels-skylar-kang-6431888.jpg" alt="Image 3">
+      </div>
+      <div class="category-content">
+          <div class="category-text">
+              <div class="number">64</div>
+              <div class="label">Living Room</div>
+          </div>
+          <img src="/assets/images/pexels-steve.jpg" alt="Image 4">
+      </div>
+  </div>
+</div>
+
+<!-- Featured products -->
+<div class="featured-section">
+  <h2>Featured Products</h2>
+  <p>Check out our latest products</p>
+<div class="scroll-wrapper">
+  
+  <div class="card card1">
+      <div class="image-container">
+          <img src="/assets/images/boul.webp" alt="Card 1 Image">
+          <div class="overlay">
+              <button class="read-more">Read More</button>
+          </div>
+      </div>
+      <div class="card-content">
+          <h2>Boul</h2>
+          <p class="price">Kshs.19.99</p>
+      </div>
+  </div>
+  <div class="card card2">
+      <div class="image-container">
+          <img src="/assets/images/chair.webp" alt="Card 2 Image">
+          <div class="overlay">
+              <button class="read-more">Table</button>
+          </div>
+          <div class="discount">Save 20%</div>
+      </div>
+      <div class="card-content">
+          <h2>Card 2 Title</h2>
+          <p class="price">Kshs.29.99</p>
+      </div>
+  </div>
+  <div class="card card3">
+      <div class="image-container">
+          <img src="/assets/images/chairs.webp" alt="Card 3 Image">
+          <div class="overlay">
+              <button class="read-more">Read More</button>
+          </div>
+      </div>
+      <div class="card-content">
+          <h2>Chair</h2>
+          <p class="price">Kshs.39.99</p>
+      </div>
+  </div>
+  <div class="card card3">
+    <div class="image-container">
+        <img src="/assets/images/charlotte.jpg" alt="Card 3 Image">
+        <div class="overlay">
+            <button class="read-more">Read More</button>
+        </div>
+    </div>
+    <div class="card-content">
+        <h2>Wood Board</h2>
+        <p class="price">Kshs.39.99</p>
+    </div>
+</div>
+</div>
+</div>
