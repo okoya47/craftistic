@@ -1,0 +1,70 @@
+<nav class="navbar">
+    <div class="navbar-logo">
+      <a href="#">
+        <img src="/assets/images/logo-no-background.svg" alt="Logo">
+      </a>
+    </div>
+  
+    <!-- Desktop Menu -->
+    <div class="desktop-navbar-links">
+      <a href="/">Home</a>
+      <a routerLink="/products">Products</a>
+      <a routerLink="/about-us">About</a>
+      <a routerLink="/contact-us">Contact</a>
+    </div>
+  
+    <div class="desktop-navbar-icons">
+      <a href="#" aria-label="Facebook">
+        <mat-icon>facebook</mat-icon>
+      </a>
+      <a href="#" aria-label="Twitter">
+        <mat-icon>twitter</mat-icon>
+      </a>
+      <a href="#" aria-label="Instagram">
+        <mat-icon>instagram</mat-icon>
+      </a>
+      <a href="#" class="cart-icon" aria-label="Cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </a>
+    </div>
+  
+    <div class="desktop-navbar-auth">
+      <button routerLink="/login"mat-button>Login</button>
+      <button routerLink="/signup" mat-raised-button color="primary">Sign Up</button>
+    </div>
+  
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggle" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <!-- Mobile Menu -->
+    <div class="mobile-navbar-collapse" [ngClass]="{'open': isMenuOpen}">
+      <div class="mobile-navbar-links">
+        <a href="/">Home</a>
+        <a routerLink="/products">Products</a>
+        <a routerLink="/about-us">About</a>
+        <a routerLink="/contact-us">Contact</a>
+      </div>
+  
+      <div class="mobile-navbar-icons">
+        <a href="#" aria-label="Facebook">
+          <mat-icon>facebook</mat-icon>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <mat-icon>twitter</mat-icon>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <mat-icon>instagram</mat-icon>
+        </a>
+        <a href="#" class="cart-icon" aria-label="Cart">
+          <mat-icon>shopping_cart</mat-icon>
+        </a>
+      </div>
+  
+      <div class="mobile-navbar-auth">
+        <button mat-button>Login</button>
+        <button mat-raised-button color="primary">Sign Up</button>
+      </div>
+    </div>
+  </nav>

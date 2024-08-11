@@ -10,6 +10,17 @@ import { HomeComponent } from './components/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { ProductsComponent } from './components/products/products.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CommonModule } from '@angular/common';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
+
 
 
 
@@ -18,7 +29,17 @@ import { MatButtonModule } from '@angular/material/button';
     AppComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductDetailsComponent,
+    AboutUsComponent,
+    ContactUsComponent,
+    CartComponent,
+    CheckoutComponent,
+    OrderConfirmationComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +47,8 @@ import { MatButtonModule } from '@angular/material/button';
     FormsModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    CommonModule
 
   ],
   providers: [
@@ -35,4 +57,6 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

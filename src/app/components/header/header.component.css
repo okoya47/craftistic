@@ -1,0 +1,118 @@
+/* Navbar Base */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+  }
+  
+  .navbar-logo img {
+    height: 96px;
+  }
+  
+  /* Desktop View */
+  .desktop-navbar-links, .desktop-navbar-icons, .desktop-navbar-auth {
+    display: flex;
+    align-items: center;
+  }
+  
+  .desktop-navbar-links a, .desktop-navbar-icons a {
+    margin: 0 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .desktop-navbar-icons a {
+    font-size: 24px;
+  }
+  
+  .desktop-navbar-auth button {
+    margin-left: 0.5rem;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .desktop-navbar-auth button.signup {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* Responsive Menu Toggle */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Collapse Menu (Mobile View) */
+  .mobile-navbar-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .mobile-navbar-collapse.open {
+    display: flex;
+  }
+  
+  .mobile-navbar-collapse a, .mobile-navbar-collapse button {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    
+  }
+
+  .mobile-navbar-links a{
+   
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .mobile-navbar-collapse .mobile-navbar-icons a {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .mobile-navbar-auth{
+    padding-bottom: 24px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .desktop-navbar-links, .desktop-navbar-icons, .desktop-navbar-auth {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .mobile-navbar-collapse.open {
+      display: flex;
+    }
+  }

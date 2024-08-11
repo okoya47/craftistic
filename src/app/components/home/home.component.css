@@ -1,121 +1,4 @@
-/* Navbar Base */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-  }
-  
-  .navbar-logo img {
-    height: 96px;
-  }
-  
-  /* Desktop View */
-  .desktop-navbar-links, .desktop-navbar-icons, .desktop-navbar-auth {
-    display: flex;
-    align-items: center;
-  }
-  
-  .desktop-navbar-links a, .desktop-navbar-icons a {
-    margin: 0 0.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Manrope', sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .desktop-navbar-icons a {
-    font-size: 24px;
-  }
-  
-  .desktop-navbar-auth button {
-    margin-left: 0.5rem;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 14px;
-    font-family: 'Manrope', sans-serif;
-  }
-  
-  .desktop-navbar-auth button.signup {
-    background-color: #007bff;
-    border: none;
-  }
-  
-  /* Responsive Menu Toggle */
-  .navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  /* Collapse Menu (Mobile View) */
-  .mobile-navbar-collapse {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    z-index: 1000; /* Ensure it's above other content */
-  }
-  
-  .mobile-navbar-collapse.open {
-    display: flex;
-  }
-  
-  .mobile-navbar-collapse a, .mobile-navbar-collapse button {
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    
-  }
 
-  .mobile-navbar-links a{
-   
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    border-bottom: 1px solid #444;
-    font-size: 14px;
-    font-family: 'Manrope', sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .mobile-navbar-collapse .mobile-navbar-icons a {
-    font-size: 2rem;
-    margin: 1rem 0;
-  }
-  .mobile-navbar-auth{
-    padding-bottom: 24px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .desktop-navbar-links, .desktop-navbar-icons, .desktop-navbar-auth {
-      display: none;
-    }
-  
-    .navbar-toggle {
-      display: block;
-    }
-  
-    .mobile-navbar-collapse.open {
-      display: flex;
-    }
-  }
   
 
   /* Banner section */
@@ -361,7 +244,7 @@
 
 /* Featured products styles */
 .featured-section {
-  padding: 96px 40px 0px 40px;
+  padding: 96px 40px 48px 40px;
   background-color: #f4f4f4;
 }
 
@@ -518,3 +401,95 @@
       width: 30%; /* Adjust width for desktops */
   }
 }
+
+/* Create Account section */
+.account-section h5 {
+  font-family: 'DM Serif Display', serif !important;
+  margin-bottom: 32px;
+  font-size: 24px;
+  padding-bottom: 32px;
+ /* background-color: #ebe6da; */
+  color: rgba(33, 37, 41, 0.75);
+}
+.account-section h2 {
+  font-family: 'DM Serif Display', serif !important;
+  margin-bottom: 32px;
+  font-size: 48px;
+  line-height: 48px;
+}
+.account-section p {
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 32px;
+  font-size: 16px;
+  color: rgba(33, 37, 41, 0.75);
+  
+}
+
+.account-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding: 96px 40px 48px 40px;
+  background-color: #ebe6da;
+}
+
+.account-section .image-container {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  overflow: hidden;
+    display: inline-block;
+}
+
+.account-section .image-container img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+    width: 100%; /* Adjust based on layout needs */
+    height: auto;
+}
+
+.account-section .image-container:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.account-section .content-container {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button:hover {
+  background-color: darkorange;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .account-section .image-container,.account-section .content-container {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .account-section {
+      flex-direction: column;
+  }
+
+  .account-section .content-container {
+      padding-top: 20px;
+  }
+}
+

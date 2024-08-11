@@ -1,0 +1,94 @@
+/* Order Confirmation Page Styles */
+.order-confirmation-page {
+    padding: 48px;
+    background-color: #f4f4f4;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.confirmation-header {
+    margin-bottom: 32px;
+}
+
+.confirmation-header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: #ff5722;
+}
+
+.confirmation-header p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.order-details,
+.shipping-details,
+.order-items {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.order-details h2,
+.shipping-details h2,
+.order-items h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.order-info,
+.item-row {
+    text-align: left;
+}
+
+.info-row,
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.info-row span,
+.item-row p {
+    font-size: 16px;
+}
+
+.confirmation-footer {
+    margin-top: 32px;
+}
+
+.back-to-home {
+    padding: 16px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-confirmation-page {
+        padding: 24px;
+    }
+
+    .confirmation-header h1 {
+        font-size: 28px;
+    }
+
+    .order-details h2,
+    .shipping-details h2,
+    .order-items h2 {
+        font-size: 20px;
+    }
+
+    .back-to-home {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+}

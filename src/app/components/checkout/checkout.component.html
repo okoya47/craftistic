@@ -1,0 +1,46 @@
+<div class="checkout-page">
+    <h1>Checkout</h1>
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-items">
+            <div class="summary-item">
+                <p>Product Name</p>
+                <p>Quantity: 1</p>
+                <p>Price: $199.99</p>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+        <div class="summary-total">
+            <p>Total: $199.99</p>
+        </div>
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="payment-methods">
+        <h2>Payment Methods</h2>
+
+        <!-- Mpesa Payment -->
+        <div class="payment-option">
+            <input type="radio" id="mpesa" name="payment-method" checked />
+            <label for="mpesa">Mpesa</label>
+            <div class="mpesa-details">
+                <label for="phone-number">Enter Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="0712 345 678" />
+                <button class="mpesa-button">Send Payment</button>
+            </div>
+        </div>
+
+        <!-- Pay on Delivery -->
+        <div class="payment-option">
+            <input type="radio" id="pay-on-delivery" name="payment-method" />
+            <label for="pay-on-delivery">Pay on Delivery</label>
+        </div>
+    </div>
+
+    <!-- Place Order Button -->
+    <div class="place-order">
+        <button routerLink="/confirmOrder" class="place-order-button">Place Order</button>
+    </div>
+</div>

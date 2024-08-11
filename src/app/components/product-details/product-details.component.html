@@ -1,0 +1,87 @@
+<div class="product-detail-section">
+    <div class="product-detail-wrapper">
+      <!-- Product Image and Carousel -->
+      <div class="product-image-container">
+        <img src="/assets/images/boul.webp" alt="Main Product Image" class="main-product-image" />
+        <div class="carousel-wrapper">
+          <img src="/assets/images/boul.webp" alt="Recent Product Image 1" />
+          <img src="/assets/images/boul.webp" alt="Recent Product Image 2" />
+          <img src="/assets/images/boul.webp" alt="Recent Product Image 3" />
+        </div>
+      </div>
+  
+      <!-- Product Details -->
+      <div class="product-info">
+        <h2>Product Title</h2>
+        <p class="category">Category: Furniture</p>
+        <p class="price">$199.99</p>
+        <div class="quantity-selector">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" />
+        </div>
+        <p class="description">This is a short description of the product.</p>
+        <div class="product-actions">
+          <button routerLink="/checkout" class="buy-now">Buy Now</button>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Tabs for Description and Product Information -->
+    <div class="product-tabs">
+      <ul class="tab-list">
+        <li class="tab active" data-tab="description">Description</li>
+        <li class="tab" data-tab="product-info">Product Information</li>
+      </ul>
+      <div class="tab-content active" id="description">
+        <p>This is a detailed description of the product...</p>
+      </div>
+      <div class="tab-content" id="product-info">
+        <p>Additional product information goes here...</p>
+      </div>
+    </div>
+  
+    <!-- Related Products Section -->
+    <div class="related-products-section">
+      <h2>Related Products</h2>
+      <div class="scroll-wrapper">
+        <!-- Example of Related Product Cards -->
+        <div class="card">
+          <div class="image-container">
+            <img src="/assets/images/boul.webp" alt="Related Product 1" />
+            <div class="overlay">
+              <button routerLink="products-details" class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Related Product 1</h2>
+            <p class="price">$99.99</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-container">
+            <img src="/assets/images/boul.webp" alt="Related Product 2" />
+            <div class="overlay">
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Related Product 2</h2>
+            <p class="price">$129.99</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-container">
+            <img src="/assets/images/boul.webp" alt="Related Product 3" />
+            <div class="overlay">
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Related Product 3</h2>
+            <p class="price">$89.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    

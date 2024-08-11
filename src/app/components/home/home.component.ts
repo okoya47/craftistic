@@ -1,5 +1,8 @@
 import { Component, HostListener, OnDestroy, AfterViewInit, OnInit, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +11,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnDestroy, AfterViewInit {
   ngAfterViewInit() {
+    
     // Add animation effect to cards as they come into view
     const cards = document.querySelectorAll('.image-card');
     const options = {
@@ -29,7 +33,6 @@ export class HomeComponent implements OnDestroy, AfterViewInit {
 
   isMenuOpen = false;
   private resizeListener: () => void;
-
   showPopup = false;
   videoUrl: SafeResourceUrl;
  

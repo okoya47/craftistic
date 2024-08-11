@@ -1,74 +1,3 @@
-<nav class="navbar">
-    <div class="navbar-logo">
-      <a href="#">
-        <img src="/assets/images/logo-no-background.svg" alt="Logo">
-      </a>
-    </div>
-  
-    <!-- Desktop Menu -->
-    <div class="desktop-navbar-links">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-  
-    <div class="desktop-navbar-icons">
-      <a href="#" aria-label="Facebook">
-        <mat-icon>facebook</mat-icon>
-      </a>
-      <a href="#" aria-label="Twitter">
-        <mat-icon>twitter</mat-icon>
-      </a>
-      <a href="#" aria-label="Instagram">
-        <mat-icon>instagram</mat-icon>
-      </a>
-      <a href="#" class="cart-icon" aria-label="Cart">
-        <mat-icon>shopping_cart</mat-icon>
-      </a>
-    </div>
-  
-    <div class="desktop-navbar-auth">
-      <button mat-button>Login</button>
-      <button mat-raised-button color="primary">Sign Up</button>
-    </div>
-  
-    <!-- Mobile Toggle Button -->
-    <button class="navbar-toggle" (click)="toggleMenu()">
-      <mat-icon>menu</mat-icon>
-    </button>
-  
-    <!-- Mobile Menu -->
-    <div class="mobile-navbar-collapse" [ngClass]="{'open': isMenuOpen}">
-      <div class="mobile-navbar-links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-  
-      <div class="mobile-navbar-icons">
-        <a href="#" aria-label="Facebook">
-          <mat-icon>facebook</mat-icon>
-        </a>
-        <a href="#" aria-label="Twitter">
-          <mat-icon>twitter</mat-icon>
-        </a>
-        <a href="#" aria-label="Instagram">
-          <mat-icon>instagram</mat-icon>
-        </a>
-        <a href="#" class="cart-icon" aria-label="Cart">
-          <mat-icon>shopping_cart</mat-icon>
-        </a>
-      </div>
-  
-      <div class="mobile-navbar-auth">
-        <button mat-button>Login</button>
-        <button mat-raised-button color="primary">Sign Up</button>
-      </div>
-    </div>
-  </nav>
-
   <!-- Banner section -->
   <div class="container">
     <div class="content">
@@ -115,28 +44,28 @@
       <div class="category-content">
           <div class="category-text">
               <div class="number">24</div>
-              <div class="label">Tables</div>
+              <div class="label">Furniture</div>
           </div>
           <img src="/assets/images/pexels-rachel-claire.jpg" alt="Image 1">
       </div>
       <div class="category-content">
           <div class="category-text">
               <div class="number">23</div>
-              <div class="label">Lambs</div>
+              <div class="label">Art</div>
           </div>
           <img src="/assets/images/pexels-whynugrohou.jpg" alt="Image 2">
       </div>
       <div class="category-content">
           <div class="category-text">
               <div class="number">4</div>
-              <div class="label">Kitchen</div>
+              <div class="label">Interior Design</div>
           </div>
           <img src="/assets/images/pexels-skylar-kang-6431888.jpg" alt="Image 3">
       </div>
       <div class="category-content">
           <div class="category-text">
               <div class="number">64</div>
-              <div class="label">Living Room</div>
+              <div class="label">Wood Products</div>
           </div>
           <img src="/assets/images/pexels-steve.jpg" alt="Image 4">
       </div>
@@ -148,7 +77,19 @@
   <h2>Featured Products</h2>
   <p>Check out our latest products</p>
 <div class="scroll-wrapper">
-  
+  <div class="card card3">
+    <div class="image-container">
+        <img src="/assets/images/charlotte.jpg" alt="Card 3 Image">
+        <div class="overlay">
+            <button class="read-more">Read More</button>
+        </div>
+    </div>
+    <div class="card-content">
+        <h2>Wood Board</h2>
+        <p class="price">Kshs.39.99</p>
+    </div>
+</div>
+
   <div class="card card1">
       <div class="image-container">
           <img src="/assets/images/boul.webp" alt="Card 1 Image">
@@ -170,7 +111,7 @@
           <div class="discount">Save 20%</div>
       </div>
       <div class="card-content">
-          <h2>Card 2 Title</h2>
+          <h2>Chair</h2>
           <p class="price">Kshs.29.99</p>
       </div>
   </div>
@@ -182,7 +123,7 @@
           </div>
       </div>
       <div class="card-content">
-          <h2>Chair</h2>
+          <h2>Table</h2>
           <p class="price">Kshs.39.99</p>
       </div>
   </div>
@@ -198,5 +139,33 @@
         <p class="price">Kshs.39.99</p>
     </div>
 </div>
+<div class="card card1">
+  <div class="image-container">
+      <img src="/assets/images/boul.webp" alt="Card 1 Image">
+      <div class="overlay">
+          <button class="read-more">Read More</button>
+      </div>
+  </div>
+  <div class="card-content">
+      <h2>Boul</h2>
+      <p class="price">Kshs.19.99</p>
+  </div>
 </div>
 </div>
+</div>
+
+<!-- Create Account section -->
+
+<section class="account-section">
+  <div class="image-container">
+      <img src="/assets/images/woodCreate.jpg" alt="Image Description">
+  </div>
+  <div class="content-container">
+      <h5>Quality Craftsmanship</h5>
+      <h2>Stay Ahead with My Latest Finishes and Premium Materials</h2>
+      <p>Create an account to be the first to discover our latest premium materials and finishes, crafted to elevate your space with unmatched quality and style.</p>
+      <button class="action-button">Create Account</button>
+  </div>
+</section>
+
+ 
